@@ -2,8 +2,9 @@
 *.swp
 
 # Autotools
-/Makefile
-/Makefile.in
+.deps/
+Makefile
+Makefile.in
 /autom4te.cache
 /autoscan.log
 /autoscan-*.log
