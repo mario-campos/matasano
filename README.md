@@ -1,6 +1,6 @@
 # The Matasano Crypto Challenges
 
-[cryptopals.com](https://cryptopals.com)
+[cryptopals.com](http://cryptopals.com)
 
 ### Set 1
 
