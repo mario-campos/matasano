@@ -27,3 +27,4 @@ Makefile.in
 # Executables
 *.out
 s1c1
+s1c2

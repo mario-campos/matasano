@@ -29,7 +29,7 @@ static inline uint8_t hexord(const char c) {
 
 static inline char hexchar(const uint8_t ord) {
   assert(ord >= 0 && ord <= 15);
-  const char lookup[] = "0123456789ABCDEF";
+  const char lookup[] = "0123456789abcdef";
   return lookup[ord];
 }
 
@@ -50,9 +50,9 @@ size_t hextobin(const char * restrict hex, uint8_t * restrict bin) {
 
 void bintohex(const uint8_t * restrict bin, const size_t size,
               char * restrict hex) {
-  for(size_t i = 0; i < size; i++, hex++, bin++) {
-    *hex = hexchar(*bin & 0xF0);
-    *++hex = hexchar(*bin & 0x0F);
+  for(size_t i = 0; i < size; i++) {
+    *hex++ = hexchar(bin[i] >> 4);
+    *hex++ = hexchar(bin[i] & 0x0F);
   }
   *hex = '\0';
 }
