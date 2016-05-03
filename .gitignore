@@ -1,22 +1,8 @@
 # Vim swap files
 *.swp
 
-# Autotools
-.deps/
-Makefile
-Makefile.in
-/autom4te.cache
-/autoscan.log
-/autoscan-*.log
-/aclocal.m4
-/compile
-/config.*
-/configure
-/configure.scan
-/depcomp
-/install-sh
-/missing
-/stamp-h1
+# Meson
+build/
 
 # Object files
 *.o
@@ -28,3 +14,10 @@ Makefile.in
 *.out
 s1c1
 s1c2
+
+# Python stuff
+bin/
+include/
+lib/
+share/
+pip-selfcheck.json

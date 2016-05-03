@@ -18,9 +18,8 @@
 ```bash
 git clone https://github.com/mario-campos/matasano.git
 cd matasano
-sh autogen.sh
-./configure
-make
+mkdir build
+meson.py build
 ```
 
 ### PREREQUISITES
